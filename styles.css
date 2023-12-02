@@ -198,6 +198,13 @@ footer {
   padding-top: 80px;
   padding-bottom: 30px;
 }
+.span {
+  background-color: salmon;
+  padding: 0.25rem 1rem;
+  border-radius: 1rem;
+  color: white;
+  font-weight: 600;
+}
 
 @media screen and (max-width: 430px) {
   body {
