@@ -1,0 +1,376 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;600;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  width: 1200px;
+  margin: auto;
+}
+
+.active {
+  color: salmon !important;
+}
+
+/* navbar */
+
+nav {
+  display: flex;
+  justify-content: end;
+}
+.menu {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem;
+}
+.menu a {
+  text-decoration: none;
+  font-weight: 600;
+  color: black;
+}
+.burger {
+  display: none;
+}
+
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 140px;
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-bottom: 70px;
+}
+.intro {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.intro h1 {
+  font-size: 44px;
+}
+.intro button {
+  width: 10rem;
+  padding-block: 0.5rem;
+  border: none;
+  border-radius: 0.25rem;
+  background-color: salmon;
+  color: white;
+}
+
+.profile-image img {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+}
+
+/* Recent Post */
+
+.recent-post {
+  background-color: #9dfaf6;
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-bottom: 40px;
+}
+.recent-post > p {
+  padding-block: 30px;
+}
+.post-container {
+  display: flex;
+  justify-content: space-between;
+}
+.post-cards {
+  background-color: white;
+  width: 420px;
+  height: 295px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  padding: 20px;
+  border-radius: 1rem;
+}
+.post-cards h3 {
+  font-size: 26px;
+}
+.post-date {
+  font-size: 1.2rem;
+}
+
+/* Featured works */
+
+.featured-works {
+  padding-left: 150px;
+  padding-right: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.featured-works > p {
+  padding-top: 2rem;
+}
+.work-card {
+  display: flex;
+  gap: 1rem;
+  padding-top: 1rem;
+}
+.work-image img {
+  border-radius: 1rem;
+}
+.work-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.work-detail {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.year {
+  background-color: black;
+  padding: 0.25rem 1rem;
+  border-radius: 1rem;
+  color: white;
+}
+.hr {
+  border-bottom: 1px solid silver;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* footer */
+
+footer {
+  height: 182px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.media {
+  display: flex;
+  gap: 1rem;
+}
+.media i {
+  font-size: 30px;
+}
+.copyright p {
+  font-size: 0.6rem;
+}
+
+/* BLOG pages */
+.blog {
+  font-size: 44px;
+  padding-top: 100px;
+  padding-bottom: 55px;
+}
+.blog-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.blog-block {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Work Detail pages */
+
+.work-content-area {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-left: 235px;
+  padding-right: 235px;
+}
+.work-content-area h1 {
+  padding-top: 80px;
+  padding-bottom: 30px;
+}
+
+@media screen and (max-width: 430px) {
+  body {
+    width: inherit;
+  }
+
+  .menu {
+    display: none;
+  }
+  .burger {
+    display: flex;
+    padding: 1rem;
+  }
+  header {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 58px;
+  }
+  .intro {
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .intro h1 {
+    font-size: 32px;
+    text-align: center;
+  }
+  .intro p {
+    text-align: center;
+  }
+  .intro button {
+    width: 10rem;
+    padding-block: 0.5rem;
+    border: none;
+    border-radius: 0.25rem;
+    background-color: salmon;
+    color: white;
+  }
+
+  .profile-image img {
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+  }
+
+  /* Recent Post */
+
+  .recent-post {
+    background-color: #9dfaf6;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 40px;
+  }
+  .recent-post > p {
+    padding-block: 30px;
+    text-align: center;
+  }
+  .post-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .post-cards {
+    background-color: white;
+    width: 350px;
+    min-height: 266px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    padding: 20px;
+    border-radius: 1rem;
+  }
+  .post-cards h3 {
+    font-size: 22px;
+  }
+  .post-date {
+    font-size: 1rem;
+  }
+
+  /* Featured works */
+
+  .featured-works {
+    padding-left: 0px;
+    padding-right: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .featured-works > p {
+    padding-top: 2rem;
+    text-align: center;
+  }
+  .work-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 1rem;
+  }
+  .work-image img {
+    border-radius: 1rem;
+  }
+  .work-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-inline: 20px;
+  }
+  .work-detail {
+    display: flex;
+    gap: 2rem;
+  }
+  .hr {
+    border-bottom: 1px solid silver;
+  }
+
+  /* footer */
+
+  footer {
+    height: 182px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .media {
+    display: flex;
+    gap: 1rem;
+  }
+  .media i {
+    font-size: 30px;
+  }
+  .copyright p {
+    font-size: 0.6rem;
+  }
+
+  /* Blog page */
+  .blog {
+    padding-top: 2rem;
+    padding-left: 20px;
+    padding-bottom: 2rem;
+  }
+  .blog-container {
+    padding: 20px;
+  }
+
+  /* Work Detail pages */
+
+  .work-content-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 2rem;
+  }
+  .work-content-area h1 {
+    padding-top: 32px;
+    padding-bottom: 23px;
+  }
+  .work-content-area img {
+    width: 340px;
+  }
+}
